@@ -1,0 +1,101 @@
+[
+  {
+    "position": 1,
+    "team": "AKEZ",
+    "played": 5,
+    "won": 5,
+    "lost": 0,
+    "setsFor": 15,
+    "setsAgainst": 4,
+    "points": 15,
+    "isOurTeam": true
+  },
+  {
+    "position": 2,
+    "team": "Olympiakos VC",
+    "played": 5,
+    "won": 4,
+    "lost": 1,
+    "setsFor": 13,
+    "setsAgainst": 5,
+    "points": 12,
+    "isOurTeam": false
+  },
+  {
+    "position": 3,
+    "team": "PAOK VC",
+    "played": 5,
+    "won": 3,
+    "lost": 2,
+    "setsFor": 11,
+    "setsAgainst": 8,
+    "points": 9,
+    "isOurTeam": false
+  },
+  {
+    "position": 4,
+    "team": "Panathinaikos VC",
+    "played": 5,
+    "won": 3,
+    "lost": 2,
+    "setsFor": 10,
+    "setsAgainst": 9,
+    "points": 8,
+    "isOurTeam": false
+  },
+  {
+    "position": 5,
+    "team": "Foinikas Syros",
+    "played": 5,
+    "won": 2,
+    "lost": 3,
+    "setsFor": 9,
+    "setsAgainst": 11,
+    "points": 6,
+    "isOurTeam": false
+  },
+  {
+    "position": 6,
+    "team": "Filippos Veroias",
+    "played": 5,
+    "won": 2,
+    "lost": 3,
+    "setsFor": 8,
+    "setsAgainst": 11,
+    "points": 5,
+    "isOurTeam": false
+  },
+  {
+    "position": 7,
+    "team": "Iraklis VC",
+    "played": 5,
+    "won": 1,
+    "lost": 4,
+    "setsFor": 6,
+    "setsAgainst": 13,
+    "points": 3,
+    "isOurTeam": false
+  },
+  {
+    "position": 8,
+    "team": "AEK Athens VC",
+    "played": 5,
+    "won": 1,
+    "lost": 4,
+    "setsFor": 5,
+    "setsAgainst": 14,
+    "points": 2,
+    "isOurTeam": false
+  },
+  {
+    "position": 9,
+    "team": "Ethnikos Alexandroupolis",
+    "played": 5,
+    "won": 0,
+    "lost": 5,
+    "setsFor": 3,
+    "setsAgainst": 15,
+    "points": 0,
+    "isOurTeam": false
+  }
+]

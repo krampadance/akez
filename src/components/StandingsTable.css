@@ -1,0 +1,164 @@
+.standings-container {
+  width: 340px;
+  flex-shrink: 0;
+}
+
+.standings-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.standings-table thead tr {
+  background: rgba(255, 200, 0, 0.06);
+  border-bottom: 1px solid rgba(255, 200, 0, 0.15);
+}
+
+.standings-table thead th {
+  padding: 0.65rem 0.5rem;
+  text-align: center;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.standings-table thead th.col-team {
+  text-align: left;
+}
+
+.standings-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.15s ease;
+}
+
+.standings-row:last-child {
+  border-bottom: none;
+}
+
+.standings-row:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.standings-row td {
+  padding: 0.6rem 0.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.standings-row td.col-team {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.our-team-row {
+  background: rgba(255, 200, 0, 0.06) !important;
+}
+
+.our-team-row td {
+  color: #ffc800 !important;
+  font-weight: 700 !important;
+}
+
+.top-three {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.col-pos {
+  width: 32px;
+  text-align: center !important;
+}
+
+.col-pts {
+  font-weight: 700 !important;
+  color: #ffffff !important;
+}
+
+.our-team-row .col-pts {
+  color: #ffc800 !important;
+}
+
+.col-won {
+  color: #00c864 !important;
+}
+
+.our-team-row .col-won {
+  color: #ffc800 !important;
+}
+
+.col-lost {
+  color: rgba(255, 100, 100, 0.8) !important;
+}
+
+.our-team-row .col-lost {
+  color: #ffc800 !important;
+}
+
+.pos-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.65rem;
+  font-weight: 800;
+}
+
+.pos-1 {
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  color: #1a1a1a;
+}
+
+.pos-2 {
+  background: linear-gradient(135deg, #c0c0c0, #a8a8a8);
+  color: #1a1a1a;
+}
+
+.pos-3 {
+  background: linear-gradient(135deg, #cd7f32, #a0522d);
+  color: #ffffff;
+}
+
+.team-marker {
+  color: #ffc800;
+  margin-right: 0.3rem;
+  font-size: 0.5rem;
+  vertical-align: middle;
+}
+
+.standings-legend {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+  padding: 0 0.25rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.our-team-legend {
+  color: #ffc800;
+}
+
+@media (max-width: 1024px) {
+  .standings-container {
+    width: 100%;
+  }
+}

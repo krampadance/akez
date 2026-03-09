@@ -1,0 +1,109 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #0d0d1a;
+  color: #ffffff;
+}
+
+/* ── Header ── */
+.app-header {
+  background: linear-gradient(180deg, #0a0a18 0%, #111128 100%);
+  border-bottom: 1px solid rgba(255, 200, 0, 0.15);
+  padding: 1.25rem 2rem;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header-ball {
+  font-size: 2.2rem;
+  filter: drop-shadow(0 0 8px rgba(255, 200, 0, 0.4));
+}
+
+.header-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.header-subtitle {
+  font-size: 0.75rem;
+  color: rgba(255, 200, 0, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ── Main ── */
+.app-main {
+  flex: 1;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 2rem;
+  box-sizing: border-box;
+}
+
+.countdown-section {
+  margin-bottom: 2rem;
+}
+
+.content-section {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* ── Shared section title ── */
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.01em;
+}
+
+.section-icon {
+  font-size: 1.1rem;
+}
+
+/* ── Footer ── */
+.app-footer {
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 1024px) {
+  .content-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-main {
+    padding: 1rem;
+  }
+  .app-header {
+    padding: 1rem;
+  }
+}
+
