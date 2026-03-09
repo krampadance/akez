@@ -1,0 +1,206 @@
+.fixtures-container {
+  flex: 1;
+  min-width: 0;
+}
+
+.fixtures-group {
+  margin-bottom: 2rem;
+}
+
+.group-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 0.75rem;
+  padding-left: 0.25rem;
+  border-left: 3px solid rgba(255, 200, 0, 0.5);
+  padding-left: 0.6rem;
+}
+
+.fixture-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  cursor: default;
+}
+
+.fixture-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  border-color: rgba(255, 200, 0, 0.25);
+}
+
+.fixture-upcoming {
+  border-left: 3px solid #ffc800;
+}
+
+.fixture-finished {
+  border-left: 3px solid rgba(255, 255, 255, 0.15);
+  opacity: 0.85;
+}
+
+.fixture-date-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 52px;
+  padding-right: 1rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fixture-day {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.fixture-num {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #ffc800;
+  line-height: 1.1;
+}
+
+.fixture-month {
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.fixture-time {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.35);
+  margin-top: 0.2rem;
+}
+
+.fixture-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.fixture-round {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.fixture-teams {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.fixture-team {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fixture-team-away {
+  text-align: right;
+}
+
+.fixture-team.our-team {
+  color: #ffc800;
+  font-weight: 700;
+}
+
+.fixture-score-block {
+  flex-shrink: 0;
+}
+
+.fixture-score {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.15rem 0.55rem;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.fixture-vs {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.3);
+  padding: 0.15rem 0.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+}
+
+.fixture-venue {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fixture-badge {
+  flex-shrink: 0;
+}
+
+.badge {
+  font-size: 0.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+}
+
+.badge-win {
+  background: rgba(0, 200, 100, 0.15);
+  color: #00c864;
+  border: 1px solid rgba(0, 200, 100, 0.3);
+}
+
+.badge-loss {
+  background: rgba(255, 60, 60, 0.12);
+  color: #ff5555;
+  border: 1px solid rgba(255, 60, 60, 0.25);
+}
+
+.badge-upcoming {
+  background: rgba(255, 200, 0, 0.1);
+  color: #ffc800;
+  border: 1px solid rgba(255, 200, 0, 0.25);
+}
+
+@media (max-width: 640px) {
+  .fixture-card {
+    flex-wrap: wrap;
+  }
+
+  .fixture-date-block {
+    flex-direction: row;
+    gap: 0.4rem;
+    align-items: baseline;
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
+    width: 100%;
+    min-width: unset;
+  }
+
+  .fixture-num {
+    font-size: 1rem;
+  }
+}

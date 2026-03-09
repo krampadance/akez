@@ -1,0 +1,9 @@
+services:
+  akez-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: akez-volleyball
+    ports:
+      - "3000:80"
+    restart: unless-stopped
